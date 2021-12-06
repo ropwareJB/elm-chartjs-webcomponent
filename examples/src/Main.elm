@@ -6,6 +6,7 @@ import Html
 import Html.Attributes as HtmlAttributes
 import Html.Events as HtmlEvents
 import Html.Keyed as HtmlKeyed
+import LabelFormatting
 import MixedChart
 import MultipleAxes
 import PieChartWithOptions
@@ -15,7 +16,6 @@ import ScatterChart
 import SimpleBarChart
 import StackedBarChart
 import Tooltips
-import LabelFormatting
 
 
 examplesList : List (Example.Example Msg)

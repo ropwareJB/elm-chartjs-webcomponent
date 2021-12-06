@@ -6,10 +6,10 @@ import Chartjs.Data as ChartData
 import Chartjs.DataSets.Bar as BarData
 import Chartjs.Options as ChartOptions
 import Chartjs.Options.Tooltips as ChartTooltips
+import Color exposing (Color)
 import Example exposing (Example)
 import Html exposing (Html)
 import Utils
-import Color exposing (Color)
 
 
 view : Html msg
@@ -30,13 +30,14 @@ view =
             |> Chart.setOptions options
         )
 
+
 options : ChartOptions.Options
 options =
     let
         tooltips =
             ChartTooltips.defaultTooltips
                 |> ChartTooltips.setDisplayColors False
-                |> ChartTooltips.setBorderColor (Color.red)
+                |> ChartTooltips.setBorderColor Color.red
                 |> ChartTooltips.setBorderWidth 2
                 |> ChartTooltips.setCornerRadius 0
                 |> ChartTooltips.setTitleMarginBottom 4
@@ -45,6 +46,7 @@ options =
     in
     ChartOptions.defaultOptions
         |> ChartOptions.setTooltips tooltips
+
 
 code : String
 code =

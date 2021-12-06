@@ -5,8 +5,8 @@ import Chartjs.Common as ChartCommon
 import Chartjs.Data as ChartData
 import Chartjs.DataSets.Line as LineData
 import Chartjs.Options as ChartOptions
-import Chartjs.Options.Tooltips as ChartTooltips
 import Chartjs.Options.Scale as ChartScale
+import Chartjs.Options.Tooltips as ChartTooltips
 import Example exposing (Example)
 import Html exposing (Html)
 import Utils
@@ -31,6 +31,7 @@ view =
             |> Chart.setOptions options
         )
 
+
 options : ChartOptions.Options
 options =
     let
@@ -51,7 +52,8 @@ options =
     in
     ChartOptions.defaultOptions
         |> ChartOptions.setTooltips tooltips
-        |> ChartOptions.setScales [scaleX, scaleY]
+        |> ChartOptions.setScales [ scaleX, scaleY ]
+
 
 code : String
 code =
