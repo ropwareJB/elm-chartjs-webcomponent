@@ -6,6 +6,7 @@ import Html
 import Html.Attributes as HtmlAttributes
 import Html.Events as HtmlEvents
 import Html.Keyed as HtmlKeyed
+import LabelFormatting
 import MixedChart
 import MultipleAxes
 import PieChartWithOptions
@@ -14,6 +15,7 @@ import RadarChart
 import ScatterChart
 import SimpleBarChart
 import StackedBarChart
+import Tooltips
 
 
 examplesList : List (Example.Example Msg)
@@ -26,6 +28,8 @@ examplesList =
     , RadarChart.example
     , ScatterChart.example
     , MultipleAxes.example
+    , Tooltips.example
+    , LabelFormatting.example
     ]
 
 
@@ -95,7 +99,7 @@ viewExample example =
 viewExampleCode : String -> Html.Html Msg
 viewExampleCode code =
     Html.pre []
-        [ Html.code []
+        [ Html.code [ HtmlAttributes.class "language-elm" ]
             [ Html.text code
             ]
         ]
