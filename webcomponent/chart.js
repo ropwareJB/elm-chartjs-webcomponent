@@ -77,9 +77,9 @@ function generateTooltipLabelCallbackFunction(labelFormat, config) {
 // Generate a callback function for a scale tick
 function generateScaleTickCallbackFunction(tickFormat, config) {
   if (tickFormat.prefix) {
-    config.callback = function(value, _, _) { return tickFormat.prefix + value }
+    config.callback = function(value) { return tickFormat.prefix + value }
   } else if (tickFormat.suffix) {
-    config.callback = function(value, _, _) { return value + tickFormat.suffix }
+    config.callback = function(value) { return value + tickFormat.suffix }
   }
 }
 
