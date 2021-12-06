@@ -31,6 +31,6 @@
     "elm-format": "^0.8.5"
   },
   "dependencies": {
-    "chart.js": "^3.4.1"
+    "chart.js": "^3.6.1"
   }
 }
