@@ -1,5 +1,5 @@
 {
-  "name": "@indicatrix/elm-chartjs-webcomponent",
+  "name": "@ropwareJB/elm-chartjs-webcomponent",
   "version": "3.0.0",
   "description": "Web component bridge to Chartjs for Elm Chartjs bindings",
   "main": "webcomponent/chart.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/indicatrix/elm-chartjs-webcomponent.git"
+    "url": "git+https://github.com/ropwareJB/elm-chartjs-webcomponent.git"
   },
   "keywords": [
     "elm",
@@ -20,9 +20,9 @@
   "author": "Indicatrix",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/indicatrix/elm-chartjs-webcomponent/issues"
+    "url": "https://github.com/ropwareJB/elm-chartjs-webcomponent/issues"
   },
-  "homepage": "https://github.com/indicatrix/elm-chartjs-webcomponent#readme",
+  "homepage": "https://github.com/ropwareJB/elm-chartjs-webcomponent#readme",
   "directories": {
     "example": "examples"
   },
