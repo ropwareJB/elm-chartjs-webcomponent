@@ -4,7 +4,8 @@
 
  For more advanced functionality, consider using native JS instead of Elm
 */
-import Chart from 'chart.js/auto';
+import { Chart, registerables } from 'chart.js';
+Chart.register(...registerables);
 
 // Update any keys in an existing object with a new object
 // Any keys in the old object but not in the new object will be left untouched
